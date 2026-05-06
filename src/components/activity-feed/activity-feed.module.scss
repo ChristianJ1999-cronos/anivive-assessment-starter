@@ -1,0 +1,86 @@
+.feed-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feed-item {
+  border-bottom: 1px solid var(--color-border-primary);
+  padding: var(--space-md) 0;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.item-header {
+  align-items: center;
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
+}
+
+.item-badge {
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  padding: 0.125rem var(--space-sm);
+
+  &--appointment {
+    background-color: #dbeafe;
+    color: #1e40af;
+  }
+
+  &--prescription {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+
+  &--result {
+    background-color: #fef3c7;
+    color: #92400e;
+  }
+
+  &--payment {
+    background-color: #ede9fe;
+    color: #5b21b6;
+  }
+}
+
+.item-pet {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.item-time {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-xs);
+  margin-left: auto;
+}
+
+.item-message {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  margin: 0;
+}
+
+.item-detail {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-xs);
+  margin: var(--space-xs) 0 0;
+}
+
+.empty-state {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-sm);
+  padding: var(--space-md) 0;
+  text-align: center;
+}
