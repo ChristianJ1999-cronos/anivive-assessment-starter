@@ -6,6 +6,7 @@ import {
   toggleSidebar,
 } from "@/redux/features/sidebar";
 import styles from "./header.module.scss";
+import Notifications from "@/components/notifications";
 
 export default function Header() {
   const dispatch = useAppDispatch();
@@ -25,10 +26,11 @@ export default function Header() {
           <span className={styles["toggle-bar"]} />
         </button>
         <span className={styles["logo"]}>Anivive</span>
-        <span className={styles["logo"]}>Cronos testing</span>
       </div>
       <nav aria-label="Header actions" className={styles["header-actions"]}>
-        {/* Notifications go here */}
+        <nav aria-label="Header actions" className={styles["header-actions"]}>
+          <Notifications />
+        </nav>
       </nav>
     </header>
   );

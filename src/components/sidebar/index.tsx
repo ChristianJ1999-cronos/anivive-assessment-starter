@@ -20,7 +20,7 @@ export default function Sidebar() {
     <aside
       aria-label="Main navigation"
       className={cn(styles["sidebar"], {
-        [styles["sidebar--collapsed"]]: collapsed,
+        [styles["sidebar--collapsed"] as string]: collapsed,
       })}
     >
       <nav className={styles["sidebar-nav"]}>
