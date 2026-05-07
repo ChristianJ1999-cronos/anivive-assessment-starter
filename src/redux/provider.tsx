@@ -7,3 +7,4 @@ import { store } from "./store";
 export default function ReduxProvider({ children }: PropsWithChildren) {
   return <Provider store={store}>{children}</Provider>;
 }
+ 

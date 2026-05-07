@@ -15,3 +15,4 @@ export type Notification = {
   read: boolean;
   type: "info" | "success" | "warning" | "error";
 };
+  

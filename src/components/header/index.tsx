@@ -25,6 +25,7 @@ export default function Header() {
           <span className={styles["toggle-bar"]} />
         </button>
         <span className={styles["logo"]}>Anivive</span>
+        <span className={styles["logo"]}>Cronos testing</span>
       </div>
       <nav aria-label="Header actions" className={styles["header-actions"]}>
         {/* Notifications go here */}
@@ -32,3 +33,4 @@ export default function Header() {
     </header>
   );
 }
+ 
