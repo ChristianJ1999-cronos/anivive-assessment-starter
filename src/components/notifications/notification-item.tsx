@@ -14,12 +14,12 @@ export default function NotificationItem({ notification }: Props){
 
     return(
         <div className={`${styles["notification-item"]} ${!notification.read ? styles["notification-item--unread"] : ""}`} onClick={() => dispatch(markAsRead(notification.id))} >
-            <div style={{display: "flex", alignItems: "center", gap: "0.5rem" }} >
+            <div className={styles["notification-item-header"]} >
                 <span className={`${styles["notification-type"]} ${styles[`notification-type--${notification.type}`]}`} />
                 <strong>{notification.title}</strong>
             </div>
 
-            <p style={{ margin: "0.25rem 0 0", fontSize: "var(--font-size-sm)", color: "var(--color-text-secondary)"}}>
+            <p className={styles["notification-message"]}>
                 {notification.message}
             </p>
         </div>

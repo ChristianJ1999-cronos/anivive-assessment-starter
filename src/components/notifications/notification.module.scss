@@ -95,3 +95,14 @@
     padding: var(--space-xl);
 }
 
+.notification-item-header{
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.notification-message{
+    margin: var(--space-xs) 0 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}

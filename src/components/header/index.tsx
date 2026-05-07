@@ -28,9 +28,7 @@ export default function Header() {
         <span className={styles["logo"]}>Anivive</span>
       </div>
       <nav aria-label="Header actions" className={styles["header-actions"]}>
-        <nav aria-label="Header actions" className={styles["header-actions"]}>
           <Notifications />
-        </nav>
       </nav>
     </header>
   );
